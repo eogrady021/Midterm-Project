@@ -1,1 +1,6 @@
-
+03) ggplot(midterm_data, aes(x=pollution_tons)) + geom_histogram()
+ggplot(midterm_data, aes(x=pct_nonwhite)) + geom_histogram()
+ggplot(midterm_data, aes(x=income_per_capita)) + geom_histogram()
+05) midterm_data.lm <- lm(pct_nonwhite ~ pollution_tons, data = midterm_data)
+08) midterm_data.lm <- lm(pct_nonwhite ~ pollution_tons + is_urban, data = midterm_data)
+11) midterm_data.lm <- lm(pct_nonwhite ~ is_urban, data = midterm_data)
